@@ -1,10 +1,10 @@
 variable "ashu" {
-    type = string
-    default = "output.txt"
-  
+  type    = string
+  default = "output.txt"
+
 }
 variable "content" {
-    type = string
-    default = "welcome"
-  
+  type    = string
+  default = "welcome"
+
 }

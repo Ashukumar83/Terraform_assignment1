@@ -1,2 +1,2 @@
-name = "demo.txt"
-content ="tfvars created"
+name    = "demo.txt"
+content = "tfvars created"

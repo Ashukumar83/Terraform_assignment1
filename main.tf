@@ -59,7 +59,7 @@ resource "local_file" "myfile4" {
 variable "ashu4" {
   type        = list(any)
   description = "content"
-  default     = ["986", "content list"]
+  default     = ["2001", "content list"]
 }
 
 
@@ -94,8 +94,8 @@ variable "ashu6" {
   })
   description = "pass the value of content"
   default = {
-    content  = 1999
-    filename = "saluja"
+    content  = 0803
+    filename = "kumar"
   }
 
 }
@@ -114,6 +114,7 @@ resource "local_file" "myfile7" {
 # output block
 resource "local_file" "myfile8" {
   filename = var.ashu
+  content  = var.content
 }
 output "output_name" {
   value = local_file.myfile8.content
